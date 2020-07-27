@@ -1,5 +1,9 @@
 *{
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 1,300;
+    font-style: italic;
+
 }
 .header{
     text-align: center;

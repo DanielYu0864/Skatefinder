@@ -9,15 +9,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,100;1,300&display=swap" rel="stylesheet">
 </head>
 <body>
-     
+
     <h1>Skate Finder</h1>
-    
+
     <div id='container'>
      <div id='search'>
             <h2>Search for parks:</h2>
             <p>Enter your location below:</p>
      <!-- link button 'search-button' to location input -->
-            <input class='location' placeholder='Type location here'>
+            <input class='location search-location' placeholder='Type location here'>
             <button id='search-btn'>Search</button>
             <!-- current location button should use current location -->
             <p>or click below to use current location</p>
@@ -34,7 +34,12 @@
      <div class='forecast'>
          <!-- three day weather forecast goes here. chance of precipitation is information we want -->
          <h3>Weather</h3>
-         <div id='current-weather-display'></div>
+         <div id='current-weather-display'>
+                <p>City Name: <span class="city-name"></span></p>
+                <p>Temperature: <span class="temp"></span>&deg;F</p>
+                <p>Condition: <span class="condition"></span></p>
+                <p>UV Idex: <span class="uv-index"></span></p>
+         </div>
          <div id='forecast-display'></div>
         </div>
      <div class='map'>
@@ -44,12 +49,10 @@
 
      </div>
     </div>
-    
+
     <h4>Made by Daniel, Vascile, and Pete</h4>
-   
 
-
-
+    <script src="https://code.jquery.com/jquery.js"></script> <!-- D -->
     <script src="regular.js"></script> <!-- V -->
     <script src="apiKey.js"></script> <!-- D -->
 

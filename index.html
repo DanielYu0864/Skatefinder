@@ -14,14 +14,14 @@
     
     <div id='container'>
      <div id='search'>
-         <h2>Search for parks:</h2>
-         <p>Enter your location below:</p>
-            <!-- link button 'search-button' to location input -->
-        <input class='location' placeholder='Type location here'>
-        <button id='search-btn'>Search</button>
-        <!-- current location button should use current location -->
-        <p>or click below to use current location</p>
-        <button id='use-current'>Use Current Location</button>
+            <h2>Search for parks:</h2>
+            <p>Enter your location below:</p>
+     <!-- link button 'search-button' to location input -->
+            <input class='location' placeholder='Type location here'>
+            <button id='search-btn'>Search</button>
+            <!-- current location button should use current location -->
+            <p>or click below to use current location</p>
+            <button id='use-current'>Use Current Location</button>
 
      </div>
      <div class='park-list'>
@@ -33,12 +33,14 @@
      </div>
      <div class='forecast'>
          <!-- three day weather forecast goes here. chance of precipitation is information we want -->
-         <h3>Forecast</h3>
-
-     </div>
+         <h3>Weather</h3>
+         <div id='current-weather-display'></div>
+         <div id='forecast-display'></div>
+        </div>
      <div class='map'>
          <!-- the center of the map should be returned information from search, 5-10 mile radius? -->
          <h3>Map</h3>
+         <div id='map-display'></div>
 
      </div>
     </div>

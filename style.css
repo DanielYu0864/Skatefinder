@@ -3,16 +3,73 @@
     font-family: 'Roboto', sans-serif;
     font-weight: 1,300;
     font-style: italic;
+    align-items: center;
+    padding: 10px; 
+    margin: 20px;
+    border: 2px; 
+    
+    width: 100%;
+
 
 }
-.header{
-    text-align: center;
-    font-size: 28px;
+body{
+    background-color: black;
 
 }
-.footer{
+h1,h2,h3,h4{
     text-align: center;
-}
-h1,h2,h3{
     font-family: 'Permanent Marker', cursive;
 }
+h1{
+    text-align: center;
+    font-size: 40px;
+    background-color: rgb(4, 110, 96);
+    height: 80px;
+    width: 90%;
+    border-radius: 10px;
+
+}
+#search{
+    background-color: rgb(4, 110, 96);
+    height: auto;
+    max-width:80%;
+    border-radius: 10px;
+}
+#input{
+    width: 60px;
+    
+
+}
+button{
+    background-color: dodgerblue;
+    color: whitesmoke;
+    text-align: center;
+    border-radius:5px;
+    width: 80px;
+    max-width: 50%;
+}
+.park-list{
+    background-color:rgb(4, 110, 96);
+    width: 80%;
+    height: auto; 
+    border-radius: 10px;
+}
+.forecast{
+    background-color: rgb(4, 110, 96);
+    width: 80%;
+    border-radius: 10px;
+}
+.map{
+    background-color: rgb(4, 110, 96);
+    width: 80%;
+    border-radius: 10px;
+}
+h4{
+    text-align: center;
+    color: hotpink;
+    background-color: rgb(4, 110, 96);
+    width: 90%;
+    height: 40px;
+    border-radius: 5px;
+}
+

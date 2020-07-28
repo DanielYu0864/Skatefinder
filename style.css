@@ -13,11 +13,11 @@
 
 }
 body{
-    background-color: ;
+    background-color: whitesmoke;
     
    
-
 }
+
 h1,h2,h3,h4{
     text-align: center;
     font-family: 'Permanent Marker', cursive;
@@ -30,20 +30,24 @@ h1{
     height: 80px;
     width: 90%;
     border-radius: 10px;
+    box-shadow: 10px 2px 2px black;
 
 }
 #search{
     background-color: rgb(4, 110, 96);
     height: auto;
     max-width:80%;
+    border-color: hotpink;
+    border-width: 5px;
     border-radius: 10px;
+    box-shadow: 10px 2px 2px black;
 }
 input{
     width: 160px;
     border-radius: 5px;
 }
 button{
-    background-color: dodgerblue;
+    background-color: rgba(23, 35, 199, 0.671);
     color: black;
     font-weight: 400;
     text-align: center;
@@ -58,16 +62,20 @@ button{
     width: 80%;
     height: auto; 
     border-radius: 10px;
+    box-shadow: 10px 2px 2px black;
+
 }
 .forecast{
     background-color: rgb(4, 110, 96);
     width: 80%;
     border-radius: 10px;
+    box-shadow: 10px 2px 2px black;
 }
 .map{
     background-color: rgb(4, 110, 96);
     width: 80%;
     border-radius: 10px;
+    box-shadow: 10px 2px 2px black;
 }
 h4{
     text-align: center;
@@ -76,5 +84,6 @@ h4{
     width: 90%;
     height: 40px;
     border-radius: 5px;
+    box-shadow: 10px 2px 2px black;
 }
 

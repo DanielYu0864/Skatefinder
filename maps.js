@@ -84,8 +84,8 @@ function initMap() {
             }
           ]
     };
-    var myMap = new google.maps.Map(document.getElementById("map"), opt);
-    
+    var myMap = new google.maps.Map(document.getElementById("map-display"), opt);
+
     var marker = new google.maps.Marker({
         position: pos,
         map: myMap,
@@ -100,3 +100,5 @@ function initMap() {
         info.open(myMap, marker);
     });
 }
+
+initMap();

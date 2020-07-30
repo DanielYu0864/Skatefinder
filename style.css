@@ -27,64 +27,96 @@ h1,h2,h3,h4{
 h1{
     text-align: center;
     font-size: 40px;
-    background-color: rgb(4, 110, 96);
+    background-color: rgba(4, 110, 96, 0.301);
     height: 80px;
     width: 90%;
+    border-style: solid;
+    border-color: hotpink;
+    border-width: 1px;
     border-radius: 10px;
-    box-shadow: 10px 2px 2px black;
+    box-shadow: 10px 2px 2px rgba(0, 0, 0, 0.527);
 
 }
 #search{
-    background-color: rgb(4, 110, 96);
+    background-color: rgba(4, 110, 96, 0.301);
     height: auto;
     max-width:80%;
+    border-style: solid;
     border-color: hotpink;
-    border-width: 5px;
+    border-width: 1px;
     border-radius: 10px;
-    box-shadow: 10px 2px 2px black;
+    box-shadow: 10px 2px 2px rgba(0, 0, 0, 0.527);
 }
 input{
     width: 160px;
     border-radius: 5px;
 }
 button{
-    background-color: rgba(23, 35, 199, 0.671);
+    background-color: rgba(33, 207, 85, 0.671);
     color: black;
     font-weight: 400;
     text-align: center;
     border-radius:5px;
     width: 140px;
     /* max-width: 50%; */
-    box-shadow: 10px 2px 2px black;
+    box-shadow: 10px 2px 2px rgba(0, 0, 0, 0.527);
     
 }
+button:hover{
+    background-color:rgba(86, 207, 15, 0.76);
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(247, 6, 215, 0.5);
+    border-style: ridge;
+    border-width: 1px;
+    border-color: black;
+    transform: scale(1.09);
+    transform: transform 150ms;
+    cursor: pointer;
+}
 .park-list{
-    background-color:rgb(4, 110, 96);
+    background-color:rgba(4, 110, 96, 0.301);
     width: 80%;
     height: auto; 
+    border-style: solid;
+    border-color: hotpink;
+    border-width: 1px;
     border-radius: 10px;
-    box-shadow: 10px 2px 2px black;
+    box-shadow: 10px 2px 2px rgba(0, 0, 0, 0.527);
 
 }
 .forecast{
-    background-color: rgb(4, 110, 96);
+    background-color: rgba(4, 110, 96, 0.301);
     width: 80%;
+    border-style: solid;
+    border-color: hotpink;
+    border-width: 1px;
     border-radius: 10px;
-    box-shadow: 10px 2px 2px black;
+    box-shadow: 10px 2px 2px rgba(0, 0, 0, 0.527);
 }
 .map{
-    background-color: rgb(4, 110, 96);
+    background-color:rgba(4, 110, 96, 0.301);
     width: 80%;
+    border-style: solid;
+    border-color: hotpink;
+    border-width: 1px;
     border-radius: 10px;
-    box-shadow: 10px 2px 2px black;
+    box-shadow: 10px 2px 2px rgba(0, 0, 0, 0.527);
 }
+
 h4{
     text-align: center;
     color: black;
-    background-color: rgb(4, 110, 96);
+    background-color: rgba(4, 110, 96, 0.301);
     width: 90%;
     height: 40px;
+    border-style: solid;
+    border-color: hotpink;
+    border-width: 1px;
     border-radius: 5px;
-    box-shadow: 10px 2px 2px black;
+    box-shadow: 10px 2px 2px rgba(0, 0, 0, 0.527);
 }
 
+@media screen and (max-width: 768px) {
+    button {
+        min-width: 40rem;
+    }
+}

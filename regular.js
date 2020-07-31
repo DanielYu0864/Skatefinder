@@ -1,7 +1,7 @@
 const searchLocationInput = document.querySelector(".search-location");
 const searchButton = document.querySelector("#search-btn");
 const cityName = document.querySelector(".city-name");
-
+const container = document.querySelector("#container");
 
 function searchLocation(event) {
     event.preventDefault();
@@ -11,6 +11,7 @@ function searchLocation(event) {
     requestCityWeather(citySearched).then((data) => {
         initMap(data)
         updataWeather(data);
+
     }).catch((error) => {
         console.log(error);
     })
@@ -22,7 +23,7 @@ function updataWeather(city) {
 
     $(".condition").html(city.weather[0].description);
     $(".temp").html(((city.main.temp - 273.15) * 1.80 + 32).toFixed(0));
-
+    container.classList.remove("display-none");
     requestCityUVI(city).then((data) => {
         uvIndex(data);
     }).catch((error) => {
@@ -50,6 +51,7 @@ function forecastWeather(response) {
         $("#fTemp"+i).html(tempF);
         $("#fCondition"+i).html(condition);
         $("#fHumidity"+i).html(` ${humidity}%`);
+
     }
 }
 

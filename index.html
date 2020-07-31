@@ -12,18 +12,20 @@
 
     <h1>Skate Finder</h1>
 
-    <div id='container'>
-     <div id='search'>
-            <h2>Search for parks:</h2>
-            <p>Enter your location below:</p>
-     <!-- link button 'search-button' to location input -->
-            <input class='location search-location' placeholder='Type location here'>
-            <button id='search-btn'>Search</button>
-            <!-- current location button should use current location -->
-            <p>or click below to use current location</p>
-            <button id='use-current'>Use Current Location</button>
+    <div id='search'>
+        <h2>Search for parks:</h2>
+        <p>Enter your location below:</p>
+ <!-- link button 'search-button' to location input -->
+        <input class='location search-location' placeholder='Type location here'>
+        <button id='search-btn'>Search</button>
+        <!-- current location button should use current location -->
+        <p>or click below to use current location</p>
+        <button id='use-current'>Use Current Location</button>
 
-     </div>
+    </div>
+    <div id='container' class="display-none">
+
+     <div>
      <div class='park-list'>
        <!-- this should be where the returned list of parks with address should go -->
         <h2>Parks:</h2>

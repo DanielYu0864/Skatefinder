@@ -9,6 +9,7 @@ function searchLocation(event) {
     console.log(citySearched);
 
     requestCityWeather(citySearched).then((data) => {
+        initMap(data)
         updataWeather(data);
     }).catch((error) => {
         console.log(error);

@@ -59,10 +59,6 @@ function forecastWeather(response) {
     }
 }
 
-function rain() {
-
-}
-
 function uvIndex(response) {
     const uviResults = response;
     const uvi = uviResults.value;
@@ -80,14 +76,36 @@ function uvIndex(response) {
         $(".uv-index").css("background-color", "purple");
       }
 }
-
+let parkBtn = document.querySelector(".park");
+let shopBtn = document.querySelector(".shop");
+let checkParkOrShop = true;
 const loadMap = (e) => {
     console.log(e);
-    // mapDiv.setAttribute("class", "hi");
     mapDiv.innerHTML = '<iframe class="parkMap" frameborder="0" style="border:0"> yo </iframe>';
     const mapI = document.querySelector(".parkMap");
     mapI.setAttribute("style", "width:100%; height:40vw");
-    mapI.setAttribute("src", `https://www.google.com/maps/embed/v1/search?q=record+skatepark+in+${e}&key=${googleMapApiKey}`);
+
+    if (checkParkOrShop = true) {
+        mapI.setAttribute("src", `https://www.google.com/maps/embed/v1/search?q=record+skatepark+in+${e}&key=${googleMapApiKey}`);
+    } else {
+        mapI.setAttribute("src", `https://www.google.com/maps/embed/v1/search?q=record+skatesboradshop+in+${e}&key=${googleMapApiKey}`);
+    }
+
+    $(parkBtn).on("click",() =>{
+        checkParkOrShop = true;
+        mapI.setAttribute("src", `https://www.google.com/maps/embed/v1/search?q=record+skatepark+in+${e}&key=${googleMapApiKey}`);
+    });
+    $(shopBtn).on("click",() =>{
+        checkParkOrShop = false;
+        mapI.setAttribute("src", `https://www.google.com/maps/embed/v1/search?q=record+skateshop+in+${e}&key=${googleMapApiKey}`);
+    });
 }
+
+
+
+
+
+
+
 
 searchButton.addEventListener("click", searchLocation);

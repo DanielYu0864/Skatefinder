@@ -2,6 +2,7 @@ const searchLocationInput = document.querySelector(".search-location");
 const searchButton = document.querySelector("#search-btn");
 const cityName = document.querySelector(".city-name");
 const container = document.querySelector("#container");
+const footerPosition = document.querySelector("h4");
 
 function searchLocation(event) {
     event.preventDefault();
@@ -24,6 +25,7 @@ function updataWeather(city) {
     $(".condition").html(city.weather[0].description);
     $(".temp").html(((city.main.temp - 273.15) * 1.80 + 32).toFixed(0));
     container.classList.remove("display-none");
+    footerPosition.classList.remove("position")
     requestCityUVI(city).then((data) => {
         uvIndex(data);
     }).catch((error) => {

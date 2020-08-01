@@ -49,13 +49,18 @@ function forecastWeather(response) {
         let tempF = ((tempK - 273.15) * 1.80 + 32).toFixed(0);
         let condition = response.list[((i+1)*8)-1].weather[0].description;
         let humidity = response.list[((i+1)*8)-1].main.humidity;
-
+        let pop = response.list[((i+1)*8)-1].pop*100;
         $("#fDate"+i).html(date);
         $("#fTemp"+i).html(tempF);
         $("#fCondition"+i).html(condition);
         $("#fHumidity"+i).html(` ${humidity}%`);
+        $("#fPop"+i).html(pop);
 
     }
+}
+
+function rain() {
+
 }
 
 function uvIndex(response) {
@@ -82,7 +87,7 @@ const loadMap = (e) => {
     mapDiv.innerHTML = '<iframe class="parkMap" frameborder="0" style="border:0"> yo </iframe>';
     const mapI = document.querySelector(".parkMap");
     mapI.setAttribute("style", "width:100%; height:40vw");
-    mapI.setAttribute("src", `https://www.google.com/maps/embed/v1/search?q=record+skatepark+in+${e}&key=AIzaSyDmZhf4Cy3XVS_6hruDDGNfWfd0Uaxfxp4`);
+    mapI.setAttribute("src", `https://www.google.com/maps/embed/v1/search?q=record+skatepark+in+${e}&key=${googleMapApiKey}`);
 }
 
 searchButton.addEventListener("click", searchLocation);

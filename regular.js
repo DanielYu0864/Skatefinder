@@ -3,14 +3,15 @@ const searchButton = document.querySelector("#search-btn");
 const cityName = document.querySelector(".city-name");
 const container = document.querySelector("#container");
 const footerPosition = document.querySelector("h4");
+const mapDiv = document.querySelector("#map-display");
 
 function searchLocation(event) {
     event.preventDefault();
     const citySearched = searchLocationInput.value.trim();
     console.log(citySearched);
-
+    loadMap(citySearched);
     requestCityWeather(citySearched).then((data) => {
-        initMap(data)
+        // initMap(data);
         updataWeather(data);
 
     }).catch((error) => {
@@ -73,6 +74,15 @@ function uvIndex(response) {
       } else {
         $(".uv-index").css("background-color", "purple");
       }
+}
+
+const loadMap = (e) => {
+    console.log(e);
+    // mapDiv.setAttribute("class", "hi");
+    mapDiv.innerHTML = '<iframe class="parkMap" frameborder="0" style="border:0"> yo </iframe>';
+    const mapI = document.querySelector(".parkMap");
+    mapI.setAttribute("style", "width:100%; height:40vw");
+    mapI.setAttribute("src", `https://www.google.com/maps/embed/v1/search?q=record+skatepark+in+${e}&key=AIzaSyDmZhf4Cy3XVS_6hruDDGNfWfd0Uaxfxp4`);
 }
 
 searchButton.addEventListener("click", searchLocation);

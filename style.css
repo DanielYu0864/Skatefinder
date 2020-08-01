@@ -6,7 +6,7 @@
     align-items: center;
     margin: 0px;
     border: 2px;
-    
+
 }
 html,
 body{
@@ -17,7 +17,7 @@ body{
     margin: 0;
     margin-left: 35px;
     margin-right: 35px;
-    
+
 }
 .text{
     color: rgb(102, 255, 0);
@@ -51,7 +51,7 @@ body{
 }
 .display-none {
     display: none;
-   
+
 }
 #container{
     position: relative;
@@ -105,7 +105,7 @@ button{
     box-shadow: 0 0.4rem 1.4rem 0 rgba(0, 0, 0, 0.527);
     padding: 10px;
     display: inline-block;
-    
+
 }
 
 button:hover{
@@ -140,7 +140,7 @@ button:hover{
     padding: 10px;
 }
 #map-display{
-    height: 50vh;
+    height: 100%;
     width: 100%;
 }
 h4{
@@ -168,4 +168,3 @@ h4{
         display:block;
     }
 }
-

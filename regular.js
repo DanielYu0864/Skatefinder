@@ -4,7 +4,12 @@ const cityName = document.querySelector(".city-name");
 const container = document.querySelector("#container");
 const footerPosition = document.querySelector("h4");
 const mapDiv = document.querySelector("#map-display");
+const gameExplain = document.querySelector("#game-explain");
+let parkBtn = document.querySelector(".park");
+let shopBtn = document.querySelector(".shop");
+let checkParkOrShop = true;
 
+//function for search the user input and run the map and weather
 function searchLocation(event) {
     event.preventDefault();
     const citySearched = searchLocationInput.value.trim();
@@ -18,7 +23,7 @@ function searchLocation(event) {
         console.log(error);
     })
 }
-
+// weather info
 function updataWeather(city) {
     console.log(city);
     cityName.textContent = city.name;
@@ -26,7 +31,8 @@ function updataWeather(city) {
     $(".condition").html(city.weather[0].description);
     $(".temp").html(((city.main.temp - 273.15) * 1.80 + 32).toFixed(0));
     container.classList.remove("display-none");
-    footerPosition.classList.remove("position")
+    gameExplain.classList.add("display-none");
+    footerPosition.classList.remove("position");
     requestCityUVI(city).then((data) => {
         uvIndex(data);
     }).catch((error) => {
@@ -40,7 +46,7 @@ function updataWeather(city) {
     })
 
 }
-
+// forecast weather
 function forecastWeather(response) {
     console.log(response);
     for (let i=0;i<5;i++){
@@ -58,7 +64,7 @@ function forecastWeather(response) {
 
     }
 }
-
+// UV index
 function uvIndex(response) {
     const uviResults = response;
     const uvi = uviResults.value;
@@ -76,9 +82,7 @@ function uvIndex(response) {
         $(".uv-index").css("background-color", "purple");
       }
 }
-let parkBtn = document.querySelector(".park");
-let shopBtn = document.querySelector(".shop");
-let checkParkOrShop = true;
+// function to load the map API and button to swicth the skate park and skate borad shop
 const loadMap = (e) => {
     console.log(e);
     mapDiv.innerHTML = '<iframe class="parkMap" frameborder="0" style="border:0"> yo </iframe>';
@@ -107,5 +111,5 @@ const loadMap = (e) => {
 
 
 
-
+// search button event listener
 searchButton.addEventListener("click", searchLocation);

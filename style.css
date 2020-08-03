@@ -81,7 +81,7 @@ h1{
 
 #game-explain{
     background-color: rgba(4, 110, 96, 0.301);
-    height: 300px;
+    height: auto;
     max-width:95%;
     border-style: solid;
     border-color: hotpink;

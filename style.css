@@ -22,31 +22,37 @@ body{
 .text{
     color: rgb(102, 255, 0);
     font-family: 'Permanent Marker', cursive;
+    text-shadow: 1px 1px 1px black;
     padding: 10px;
 }
 .text1{
     color: aquamarine;
     font-family: 'Permanent Marker', cursive;
+    text-shadow: 1px 1px 1px black;
     padding: 10px;
 }
 .text2{
     color: rgb(255, 2, 2);
     font-family: 'Permanent Marker', cursive;
+    text-shadow: 1px 1px 1px black;
     padding: 10px;
 }
 .text3{
     color: greenyellow;
     font-family: 'Permanent Marker', cursive;
+    text-shadow: 1px 1px 1px black;
     padding: 10px;
 }
 .text4{
     color: aqua;
     font-family: 'Permanent Marker', cursive;
+    text-shadow: 1px 1px 1px black;
     padding: 10px;
 }
 .text5{
     color: springgreen;
     font-family: 'Permanent Marker', cursive;
+    text-shadow: 1px 1px 1px black;
     padding: 10px;
 }
 .display-none {

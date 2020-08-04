@@ -170,7 +170,7 @@ footer{
     color: black;
     background-color: rgba(4, 110, 96, 0.301);
     width: 95%;
-    height: 40px;
+    height: auto;
     border-style: solid;
     border-color: hotpink;
     border-width: 1px;

@@ -2,7 +2,6 @@ const searchLocationInput = document.querySelector(".search-location");
 const searchButton = document.querySelector("#search-btn");
 const cityName = document.querySelector(".city-name");
 const container = document.querySelector("#container");
-const footerPosition = document.querySelector("h4");
 const mapDiv = document.querySelector("#map-display");
 const gameExplain = document.querySelector("#app-explain");
 let parkBtn = document.querySelector(".park");
@@ -32,7 +31,6 @@ function updataWeather(city) {
     $(".temp").html(((city.main.temp - 273.15) * 1.80 + 32).toFixed(0));
     container.classList.remove("display-none");
     gameExplain.classList.add("display-none");
-    footerPosition.classList.remove("position");
     requestCityUVI(city).then((data) => {
         uvIndex(data);
     }).catch((error) => {

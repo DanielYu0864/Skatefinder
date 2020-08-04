@@ -64,7 +64,7 @@ body{
     min-height: 100vh;
 }
 
-h1,h2,h3,h4{
+h1,h2,h3,footer{
     text-align: center;
     font-family: 'Permanent Marker', cursive;
     text-shadow: 1px 1px 2px hotpink;
@@ -164,7 +164,8 @@ button:hover{
     height: 100%;
     width: 100%;
 }
-h4{
+/* h4 */
+footer{
     text-align: center;
     color: black;
     background-color: rgba(4, 110, 96, 0.301);
@@ -181,11 +182,11 @@ h4{
 }
 
 
-.position{
+/* .position{
     position: fixed;
     bottom: 0;
     width: 90%;
-}
+} */
 
 @media screen and (max-width: 768px) {
     button {

@@ -6,7 +6,7 @@ Enter any city into the serach and you'll be able to see parks and shops nearby.
 
 
 ### Screenshots:
-<img src="https://github.com/DanielYu0864/Project-01-Skatefinder/blob/master/img/home%20screen.png">
+<img src="https://github.com/DanielYu0864/Project-01-Skatefinder/blob/master/img/home_screen.png">
 
 <img src="https://github.com/DanielYu0864/Project-01-Skatefinder/blob/master/img/map.png">
 

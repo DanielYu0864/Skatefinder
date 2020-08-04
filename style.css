@@ -85,8 +85,11 @@ h1{
 
 }
 
-#game-explain{
+#app-explain{
     background-color: rgba(4, 110, 96, 0.301);
+    font-family: 'Permanent Marker', cursive;
+    font-weight: lighter;
+    text-shadow: 1px 1px 1px hotpink;
     height: auto;
     max-width:95%;
     border-style: solid;
@@ -173,12 +176,17 @@ h4{
     border-radius: 5px;
     box-shadow: 10px 2px 2px rgba(0, 0, 0, 0.527);
     padding: 10px;
+    position: fixed;
+    bottom: 0;
+   
 }
-.position{
+    
+
+/* .position{
     position: fixed;
     bottom: 0;
     width: 90%;
-}
+} */
 
 @media screen and (max-width: 768px) {
     button {

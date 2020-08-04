@@ -11,3 +11,9 @@ Enter any city into the serach and you'll be able to see parks and shops nearby.
 <img src="https://github.com/DanielYu0864/Project-01-Skatefinder/blob/master/img/map.png">
 
 <img src="https://github.com/DanielYu0864/Project-01-Skatefinder/blob/master/img/weather.png">
+
+#### Javascript and API:
+1. Using google map API and OpenWeather API
+2. Add `jQuery` and `Bootstrap`
+2. `apiKey.js` to fetch the API key and URL
+3. `regular.js` to contain the main functions and event listener

@@ -176,17 +176,16 @@ h4{
     border-radius: 5px;
     box-shadow: 10px 2px 2px rgba(0, 0, 0, 0.527);
     padding: 10px;
-    position: fixed;
     bottom: 0;
-   
-}
-    
 
-/* .position{
+}
+
+
+.position{
     position: fixed;
     bottom: 0;
     width: 90%;
-} */
+}
 
 @media screen and (max-width: 768px) {
     button {

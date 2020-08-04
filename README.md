@@ -17,3 +17,7 @@ Enter any city into the serach and you'll be able to see parks and shops nearby.
 2. Add `jQuery` 
 2. `apiKey.js` to fetch the API key and URL
 3. `regular.js` to contain the main functions and event listener
+
+##### Team Members
+Daniel Yu, Pete Low, Vasile Tronciu 
+

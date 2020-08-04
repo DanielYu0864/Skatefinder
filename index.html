@@ -17,39 +17,39 @@
         Enter any city into the serach and you'll be able to see parks and shops nearby. Youo'll also be provided with weather conditions so you don't shop up just to find the park too wet to ride.  
     </div>
 
-    <div id='search'>
+    <div id="search">
         <h2>Search below:</h2>
         <p class="text">Enter your location below:</p>
  <!-- link button 'search-button' to location input -->
     <form>
-        <input class='location search-location' placeholder='Type location here'>
-        <button id='search-btn'>Search</button>
+        <input class="location search-location" placeholder="Type location here">
+        <button id="search-btn">Search</button>
     </form>
     </div>
 
-    <div id='container' class="display-none">
+    <div id="container" class="display-none">
 
-        <div class='map'>
+        <div class="map" alt="Map-of-Parks/shops">
             <!-- the center of the map should be returned information from search, 5-10 mile radius? -->
             <h3>Map</h3>
             <div class="switch-search">
                 <button class="switch-search park">Parks</button>
                 <button class="switch-search shop">Shops</button>
             </div>
-            <div id='map-display'></div>
+            <div id="map-display"></div>
 
         </div>
 
-     <div class='forecast'>
+     <div class="forecast">
          <!-- three day weather forecast goes here. chance of precipitation is information we want -->
          <h3>Current Weather</h3>
-         <div id='current-weather-display'>
+         <div id="current-weather-display">
                 <p class="text">City Name: <span class="city-name"></span></p>
                 <p class="text">Temperature: <span class="temp"></span>&deg;F</p>
                 <p class="text">Current Weather: <span class="condition"></span></p>
                 <p class="text">UV Idex: <span class="uv-index"></span></p>
          </div>
-         <div id='forecast-display'>
+         <div id="forecast-display" alt="weather-forecast">
             <h3>5-Day Forecast</h3>
             <div class="forecast-container">
                 <div>

@@ -1,4 +1,4 @@
-# Project-01 `SkateFinder`
+# `SkateFinder`
 
 ## Team Members
 Daniel Yu, Pete Low, Vasile Tronciu
